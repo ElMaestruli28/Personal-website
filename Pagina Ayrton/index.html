@@ -10,98 +10,122 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!-- Css-->
     <link rel="stylesheet" href="style.css">
+    <!--Menu Right-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
 
+    
     <div class="container">
         <nav class="nav-main">
-            <img src="/media/ayrton.png" alt="Ayrton LOGO" class="nav-brand">
+            <img src="/media/AM_Engineering_B.png" alt="Ayrton LOGO" class="nav-brand">
+
+                <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
             <ul class="nav-menu">
                 <li>
                     <!-- <a href="#">Ultimas Noticias</a> -->
-                    <a href="#">Sobre mi</a>
                     <a href="#">Experiencia</a>
-                    <a href="#">Redes</a>
-                    <a href="#">Contactame</a>
+                    <a href="#noticias">Noticias</a>
+                    <a href="#contactame">Contactame</a>
+                    <a href="#redes">Redes</a>
                 </li>
-                <ul class="nav-menu-right">
-                    <li>
-                        <a href="#" class="fa-search">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </li>
-                </ul>
             </ul>
         </nav>
         <hr>
+    
         <!--Show case-->
         <header class="show-case">
-            <button class="contactButton"> Contact
-                <div class="iconButton">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path fill="currentColor"
-                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
-                        </path>
-                    </svg>
-                </div>
-            </button>
         </header>
 
-        <!--News Cards-->
-        <div class="news-cards">
-                <a href="https://www.instagram.com/amastrangelo.engineering/" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" class="gmail">
-                </a>
-                
-                <a href="https://www.instagram.com/amastrangelo.engineering/" target="_blank">
-                    <img src="https://www.faztweb.com/images/logos/instagram.svg" class="ig">
-                </a>
-                
-                <a href="https://ar.linkedin.com/in/ayrton-mastrángelo-616469162" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="linkedin">
-                </a>
-                </div>
-
                 <!--Cards Banner-->
-                <section class="cards-banner">
-                    <div class="content">
-                        <h2>Taking you to the first place</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam veniam consectetur molestias ducimus placeat, sint totam perspiciatis cumque eos deleniti.</p>
-                        <a href="#" class="btn">Leer mas <i class="fas fa-angle-double-right"></i></a>
-                    </div>
-                </section>
-
-                <div class="news-cards-two">
-                    <div>
-                        <img src="/media/news.jpg" alt="" />
+                <div id="noticias" class="news-cards-two">
+                        <div>
+                        <img src="/media/IMG_20230222_111156_724.jpg" alt="" />
                         <h3>Lorem, ipsum dolor.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
                             doloremque modi mollitia rerum,
                         </p>
-                        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
                     </div>
                     <div>
-                        <img src="/media/news2.jpg" alt="" />
+                        <img src="/media/IMG_20230222_111120_721.jpg" alt="" />
                         <h3>Lorem, ipsum dolor.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
                             doloremque modi mollitia rerum,
                         </p>
-                        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div>
+                        <img src="/media/PSX_20230221_210601.jpg" alt=""/>
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+                            doloremque modi mollitia rerum,
+                        </p>
                     </div>
                     </div>
 
-                    <section class="social">
+
+                    <!--Contact Form-->
+                    <div id="contactame" class="content-two">
+                    <h1 class="logo">Contac<span>tanos</span></h1>
+
+                    <div class="contact-wrapper animated bounceInUp">
+                        <div class="contact-form">
+                            <h3>Contactanos</h3>
+                            <form action="https://formsubmit.co/amastrangelo.engineering@gmail.com" method="POST">
+                                <p>
+                                    <label> Nombre Completo:</label>
+                                    <input type="text" name="name" id="">
+                                </p>
+                                <p>
+                                    <label>Direccion de E-Mail:</label>
+                                    <input type="email" name="email" id="">
+                                </p>
+                                <!-- <p>
+                                    <label for="phone">Numero de Telefono:</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="(+11)" pattern="[0-9]{4}-[0-9]{4}" required>
+                                </p> -->
+                                <p>
+                                    <label>Asunto:</label>
+                                    <input type="text" name="asunto" id="">
+                                </p>
+                                <p class="block">
+                                    <label>Mensaje:</label>
+                                    <textarea name="mensaje" rows="3"></textarea>
+                                </p>
+                                <p class="block">
+                                    <button type="submit">
+                                        Enviar
+                                    </button>
+                                </p>
+            
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                                <input type="hidden" name="_captcha" value="false">
+                            </form>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Mas Informacion</h4>
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i> Buenos Aires</li>
+                                <li><i class="fas fa-phone"></i> 11-4973-0446</li>
+                                <li><i class="fas fa-envelope-open-text"></i> ayrtonmastrangelo@gmail.com</li>
+                            </ul>
+                            <p>Karting Coaching and Racing Engineering </p>
+                        </div>
+                    </div>
+                    </div>
+            
+                    <!--Social-->
+                    <section id="redes" class="social">
                         <p>Follow AM Engineering</p>
                         <div class="links">
-                            <a href="https://www.instagram.com/amastrangelo.engineering/">
+                            <a href="https://www.instagram.com/amastrangelo.engineering/" target="_blank">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="https://ar.linkedin.com/in/ayrton-mastrángelo-616469162">
+                            <a href="https://ar.linkedin.com/in/ayrton-mastrángelo-616469162" target="_blank">
                                 <i class="fab fa-linkedin"></i>
                             </a>
-                            <a href="wa.me/54-9-11-4973-0446">
+                            <a href="wa.me/54-9-11-4973-0446" target="_blank">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                         </div>
@@ -112,46 +136,22 @@
                 <div class="footer-links">
                     <div class="footer-container">
                         <ul>
-                            <li><a href="#">
-                                <h3>Title One</h3>
-                            </a></li>
+                            </li>
+                            <li><a href="#">Cantacta con nosotros</a></li>
+                            <li><a href="#">Redes</a></li>
                             <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">
-                                <h3>Title two</h3>
-                            </a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">
-                                <h3>Title three</h3>
-                            </a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">
-                                <h3>Title four</h3>
-                            </a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
-                            <li><a href="#">Carreras</a></li>
+                            <li><a href="#">Pilotos</a></li>
+                        <!-- </ul>
+                        <ul> -->
+                            <li><a href="#">Ajustes Cookies</a></li>
+                            <li><a href="#">Politica de privacidad</a></li>
+                            <li><a href="#">Website Terms of use</a></li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="footer">
+                    <h3>©AM Engineering Copyright</h3>
                 </div>
                 </body>
                 
